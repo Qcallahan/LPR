@@ -1,0 +1,6 @@
+train: C:\Users\quent\OneDrive\Desktop\Code\LPR2\dataset\train
+val: C:\Users\quent\OneDrive\Desktop\Code\LPR2\dataset\valid
+test: C:\Users\quent\OneDrive\Desktop\Code\LPR2\dataset\test
+
+nc: 1
+names: ['licence']
