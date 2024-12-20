@@ -1,0 +1,20 @@
+# Use the PyTorch CUDA 12.1 wheels index
+--index-url https://download.pytorch.org/whl/cu121
+
+# Install PyTorch with CUDA support
+torch
+torchvision
+torchaudio
+
+# Include the YOLOv9 requirements
+-r yolov9/requirements.txt
+
+# Other dependencies
+matplotlib
+pandas
+numpy
+common
+paddlepaddle
+paddleocr
+roboflow
+ultralytics
