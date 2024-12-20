@@ -2,6 +2,8 @@ model at https://drive.google.com/file/d/1jSS4ATQyOjhutNSguIyn6NMpSe-eBatm/view?
 
 to run in git bash:
 
-cd to this folder (cd ~/desktop/lpr)
+cd to this folder (cd ~/desktop/lpr
+
 source venv/Scripts/activate
+
 py run.py
