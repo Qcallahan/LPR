@@ -1,10 +1,12 @@
+import sys
 import subprocess
 
 command = [
-    'python', 'yolov9/text_reader.py',
+    sys.executable,
+    'yolov9/text_reader.py',
     '--conf', '0.4',
     '--device', '0',
-    '--weights', 'yolov9/runs/train/exp46/weights/best.pt',
+    '--weights', 'model.pt',
     '--source', '0'
 ]
 

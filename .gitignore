@@ -17,6 +17,8 @@ dataset3/
 weights/
 yolov9/runs/
 
+venv/
+
 ANPR2.v8i.yolov9.zip
 license.v1i.yolov9.zip
 lpDetection.v3i.yolov9.zip
