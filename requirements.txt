@@ -1,3 +1,7 @@
+--index-url https://download.pytorch.org/whl/cu121
+--extra-index-url https://pypi.org/simple
+
+# Other packages
 absl-py==2.1.0
 albucore==0.0.21
 albumentations==1.4.23
@@ -94,9 +98,6 @@ tensorboard-data-server==0.7.2
 termcolor==2.5.0
 thop==0.1.1.post2209072238
 tifffile==2024.8.30
-torch==2.5.1+cu121
-torchaudio==2.5.1+cu121
-torchvision==0.20.1+cu121
 tqdm==4.67.1
 traitlets==5.14.3
 typing_extensions==4.12.2
@@ -105,5 +106,10 @@ ultralytics==8.3.52
 ultralytics-thop==2.0.13
 urllib3==2.2.3
 wcwidth==0.2.13
+
+# Install PyTorch with CUDA support
+torch
+torchvision
+torchaudio
 Werkzeug==3.1.3
 zipp==3.21.0
