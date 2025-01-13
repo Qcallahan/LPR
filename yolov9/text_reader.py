@@ -19,8 +19,6 @@ from utils.general import (LOGGER, Profile, check_file, check_img_size, check_im
 from utils.plots import Annotator, colors, save_one_box
 from utils.torch_utils import select_device, smart_inference_mode
 
-### QUENTIN CODE START
-
 from paddleocr import PaddleOCR
 import cv2
 
@@ -46,14 +44,15 @@ def perform_ocr_on_image(img, coordinates):
     
     # Extract text from results
     text = ""
+    max_conf = 0.1
     for line in results:
         if line:
             for detection in line:
                 confidence = detection[1][1]
                 detected_text = detection[1][0]
-                if confidence > 0.1:
+                if confidence > max_conf:
                     text = detected_text
-                    break
+                    max_conf = confidence
     
     # Save every 9th image that contains text
     #if counter % 9 == 1:
@@ -64,8 +63,6 @@ def perform_ocr_on_image(img, coordinates):
     
     #counter += 1
     return str(text)
-
-### QUENTIN CODE END
 
 @smart_inference_mode()
 def run(
